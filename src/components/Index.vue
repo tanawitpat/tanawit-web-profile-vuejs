@@ -1,11 +1,17 @@
 <template>
   <div class="hello">
-      <h1>Hi! I'm Tanawit :)</h1>
+    <SectionHome />
   </div>
 </template>
 
-<style scoped lang="scss">
-h1 {
-    text-align: center;
-}
-</style>
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import SectionHome from './sections/Home.vue';
+
+@Component({
+  components: {
+    SectionHome,
+  },
+})
+export default class App extends Vue {}
+</script>

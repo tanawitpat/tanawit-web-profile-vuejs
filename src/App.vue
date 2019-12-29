@@ -17,12 +17,20 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 16px;
+
+  @include respond(small) {
+    font-size: 50%; //1rem = 8px, 8/16 = 50%
+  }
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-primary;
 }
 </style>
