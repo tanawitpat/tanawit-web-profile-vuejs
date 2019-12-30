@@ -1,17 +1,19 @@
 <template>
-  <div class="hello">
+  <div id="index">
     <SectionHome />
+    <SectionAboutMe />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
 import SectionHome from './sections/Home.vue';
+import SectionAboutMe from './sections/AboutMe.vue';
 
-@Component({
+export default {
+  name: 'index',
   components: {
     SectionHome,
+    SectionAboutMe,
   },
-})
-export default class App extends Vue {}
+};
 </script>

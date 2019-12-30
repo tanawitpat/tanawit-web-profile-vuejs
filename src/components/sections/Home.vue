@@ -1,5 +1,5 @@
 <template>
-  <section class="section-home">
+  <section id="section-home" class="section-home">
     <div class="section-home__greeting u-center-text">
       <h1 class="section-home__greeting--message">Hi, I'm Tanawit</h1>
       <div class="section-home__greeting--description">Developer | Data</div>
@@ -10,7 +10,9 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
-export default class SectionHome extends Vue {}
+export default {
+  name: 'section-home',
+};
 </script>
 
 <style scoped lang="scss">
