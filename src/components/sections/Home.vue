@@ -2,7 +2,7 @@
   <section id="section-home" class="section-home">
     <div class="section-home__greeting u-center-text">
       <h1 class="section-home__greeting--message">Hi, I'm Tanawit</h1>
-      <div class="section-home__greeting--description">Developer | Data</div>
+      <div class="section-home__greeting--description">Software Developer</div>
     </div>
   </section>
 </template>
