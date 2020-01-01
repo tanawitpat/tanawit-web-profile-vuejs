@@ -3,7 +3,7 @@
     <h1 class="heading-primary u-margin-bottom-big section-education__heading">Education</h1>
     <div class="section-education__card">
       <EducationCard
-        universityName="Chulalongkorn University"
+        schoolName="Chulalongkorn University"
         degree="Bachelor of Science in Statistics"
         honor="Second-Class Honors"
         duration="2014-2018"

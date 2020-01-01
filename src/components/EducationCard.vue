@@ -1,7 +1,7 @@
 <template>
   <div class="education-card">
-    <h3 class="education-card__university-name">
-      <a :href="schoolLink">{{ universityName }}</a>
+    <h3 class="education-card__school-name">
+      <a :href="schoolLink">{{ schoolName }}</a>
     </h3>
     <p class="education-card__degree">{{ degree }}</p>
     <p class="education-card__honors">{{ honor }}</p>
@@ -9,15 +9,14 @@
     <a :href="schoolLink">
       <img
         :src="require(`@/assets/${schoolLogoPath}`)"
-        alt="Chulalongkorn University logo"
-        class="education-card__university-logo"
+        :alt="schoolName + ' logo'"
+        class="education-card__school-logo"
       >
     </a>
     <ul class="education-card__description">
       <li v-for="description in descriptions" v-bind:key="description">
         {{ description }}
       </li>
-
     </ul>
   </div>
 </template>
@@ -27,7 +26,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class EducationCard extends Vue {
-  @Prop() universityName!: string;
+  @Prop() schoolName!: string;
 
   @Prop() degree!: string;
 
@@ -65,7 +64,7 @@ export default class EducationCard extends Vue {
     color: $color-primary;
   }
 
-  &__university-name {
+  &__school-name {
     color: $color-primary;
     & > * {
       text-decoration: none;
@@ -87,7 +86,7 @@ export default class EducationCard extends Vue {
     margin-bottom: 10px;
   }
 
-  &__university-logo {
+  &__school-logo {
     position: absolute;
     top: 3rem;
     right: 4rem;
