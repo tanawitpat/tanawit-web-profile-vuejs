@@ -21,7 +21,7 @@ export default {
     rgba($color-blue-dark, .9) 0%,
     rgba($color-blue-dark, .9) 50%,
     transparent 50%),
-    url(../../assets/img/cover.png);
+    url(../assets/img/cover.png);
   background-position: right top;
   background-size: cover;
   height: 95vh;
@@ -33,7 +33,7 @@ export default {
   justify-content: center;
 
   @include respond(large) {
-    background-image: url(../../assets/img/cover.png);
+    background-image: url(../assets/img/cover.png);
     background-position: 90% top;
     grid-template-columns: 1fr;
   }
