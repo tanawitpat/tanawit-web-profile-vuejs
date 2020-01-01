@@ -11,7 +11,7 @@
       <div class="project-card">
         <h3 class="project-card__name u-center-text">Tanawit's Web Profile</h3>
         <img
-          src="../../assets/img/project-tanawitp.png"
+          src="../assets/img/project-tanawitp.png"
           alt="Tanawit's Web Profile"
           class="project-card__img"
         >
@@ -45,7 +45,7 @@
       </div>
       <div class="project-card">
         <h3 class="project-card__name u-center-text">Kiren BBQ</h3>
-        <img src="../../assets/img/project-kiren.png" alt="Kiren BBQ" class="project-card__img">
+        <img src="../assets/img/project-kiren.png" alt="Kiren BBQ" class="project-card__img">
         <p class="project-card__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
@@ -63,7 +63,7 @@
       <div class="project-card">
         <h3 class="project-card__name u-center-text">ML Kubernetes</h3>
         <img
-          src="../../assets/img/project-ml-kubernetes.png"
+          src="../assets/img/project-ml-kubernetes.png"
           alt="ML Kubernetes"
           class="project-card__img"
         >
@@ -105,7 +105,7 @@ export default {
     to right bottom,
     rgba($color-blue-dark, .9),
     rgba($color-blue-dark, .9)),
-    url(../../assets/img/bg1.jpg);
+    url(../assets/img/bg1.jpg);
 
   @include respond(medium) {
       padding: 10rem 5rem;
