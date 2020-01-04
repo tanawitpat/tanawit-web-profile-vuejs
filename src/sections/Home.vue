@@ -17,10 +17,12 @@ export default {
 
 <style scoped lang="scss">
 .section-home {
-  background-image: linear-gradient(105deg,
-    rgba($color-blue-dark, .9) 0%,
-    rgba($color-blue-dark, .9) 50%,
-    transparent 50%),
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-blue-dark, 0.9) 0%,
+      rgba($color-blue-dark, 0.9) 50%,
+      transparent 50%
+    ),
     url(../assets/img/cover.png);
   background-position: right top;
   background-size: cover;
@@ -42,13 +44,13 @@ export default {
     color: #ddd;
     font-size: 2.5rem;
     animation-name: moveInBottom;
-    animation-duration: .8s;
+    animation-duration: 0.8s;
     animation-timing-function: ease-out;
     &--message {
-        margin-bottom: .6rem;
+      margin-bottom: 0.6rem;
     }
     &--description {
-        font-size: 2rem;
+      font-size: 2rem;
     }
   }
 }

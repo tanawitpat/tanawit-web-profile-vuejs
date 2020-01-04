@@ -1,6 +1,8 @@
 <template>
   <section class="section-education">
-    <h1 class="heading-primary u-margin-bottom-big section-education__heading">Education</h1>
+    <h1 class="heading-primary u-margin-bottom-big section-education__heading">
+      Education
+    </h1>
     <div class="section-education__card">
       <EducationCard
         schoolName="Chulalongkorn University"
@@ -12,7 +14,7 @@
         :descriptions="[
           'Head of Statistics Department Exhibition in Banshi Chula Expo 2017.',
           'Research Assistant at Center of Statistical Consulting and Research, CU.',
-          'Teaching Assistant in Data Science Practicum class.'
+          'Teaching Assistant in Data Science Practicum class.',
         ]"
       />
     </div>
@@ -34,9 +36,10 @@ export default {
 <style scoped lang="scss">
 .section-education {
   background-image: linear-gradient(
-    to right bottom,
-    rgba(#fff, 0.8),
-    rgba(#fff, 0.8)),
+      to right bottom,
+      rgba(#fff, 0.8),
+      rgba(#fff, 0.8)
+    ),
     url(../assets/img/education-bg.jpg);
   background-position: center 35%;
   background-size: cover;

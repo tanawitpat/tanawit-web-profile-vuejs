@@ -11,7 +11,7 @@
         :src="require(`@/assets/${schoolLogoPath}`)"
         :alt="schoolName + ' logo'"
         class="education-card__school-logo"
-      >
+      />
     </a>
     <ul class="education-card__description">
       <li v-for="description in descriptions" v-bind:key="description">
@@ -45,14 +45,14 @@ export default class EducationCard extends Vue {
 <style scoped lang="scss">
 .education-card {
   position: relative;
-  background-color: rgba(#fff, .7);
+  background-color: rgba(#fff, 0.7);
   border-radius: 20px;
   padding: 3rem 5rem;
-  transition: all .2s;
+  transition: all 0.2s;
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: .5rem 1rem 1.5rem rgba(black, 0.1);
+    box-shadow: 0.5rem 1rem 1.5rem rgba(black, 0.1);
   }
 
   @include respond(medium) {
@@ -100,7 +100,7 @@ export default class EducationCard extends Vue {
     margin-left: 3rem;
 
     @include respond(small) {
-        margin-left: 2rem;
+      margin-left: 2rem;
     }
   }
 }

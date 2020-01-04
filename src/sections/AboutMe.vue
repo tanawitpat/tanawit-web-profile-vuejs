@@ -1,13 +1,15 @@
 <template>
   <section id="section-aboutme" class="section-aboutme">
-    <h1 class="heading-primary u-margin-bottom-medium section-aboutme__heading">About Me</h1>
+    <h1 class="heading-primary u-margin-bottom-medium section-aboutme__heading">
+      About Me
+    </h1>
     <div class="section-aboutme__content">
       <div class="section-aboutme__terminal">
         <p class="section-aboutme__terminal--title">Full stack developer</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Viverra maecenas accumsan lacus vel facilisis volutpat est.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra
+          maecenas accumsan lacus vel facilisis volutpat est.
         </p>
       </div>
       <div class="section-aboutme__description">
@@ -29,18 +31,18 @@
         </div>
         <div class="section-aboutme__social-network">
           <a href="https://www.linkedin.com/in/tanawitp/">
-              <img
-                src="../assets/img/linkedin.jpg"
-                alt="Linkedin logo"
-                class="section-aboutme__social-network--logo"
-              />
+            <img
+              src="../assets/img/linkedin.jpg"
+              alt="Linkedin logo"
+              class="section-aboutme__social-network--logo"
+            />
           </a>
           <a href="https://github.com/tanawitpat">
-              <img
-                src="../assets/img/github.png"
-                alt="Github logo"
-                class="section-aboutme__social-network--logo"
-              />
+            <img
+              src="../assets/img/github.png"
+              alt="Github logo"
+              class="section-aboutme__social-network--logo"
+            />
           </a>
         </div>
       </div>
@@ -82,7 +84,7 @@ export default {
 
     @include respond(large) {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 1fr)
+      grid-template-rows: repeat(2, 1fr);
     }
   }
 
@@ -108,7 +110,7 @@ export default {
     }
 
     @include respond(medium) {
-        margin: 0rem;
+      margin: 0rem;
     }
   }
 
@@ -116,21 +118,21 @@ export default {
     padding-left: 5rem;
 
     @include respond(large) {
-        margin-top: 5rem;
-        padding: 0rem 5rem;
+      margin-top: 5rem;
+      padding: 0rem 5rem;
     }
 
     @include respond(medium) {
-        padding: 0;
-        text-align: center;
+      padding: 0;
+      text-align: center;
     }
   }
 
   &__profile {
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
 
     &--title {
-        color: $color-secondary;
+      color: $color-secondary;
     }
   }
 

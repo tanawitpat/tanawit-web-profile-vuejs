@@ -1,14 +1,16 @@
 <template>
   <div class="experience-card">
     <h3 class="experience-card__position">{{ title }}</h3>
-    <a :href="companyWebsite" class="experience-card__company-name">{{ companyName }}</a>
+    <a :href="companyWebsite" class="experience-card__company-name">{{
+      companyName
+    }}</a>
     <p class="experience-card__duration">{{ duration }}</p>
     <a :href="companyWebsite">
       <img
         :src="require(`@/assets/${companyLogoPath}`)"
         :alt="companyName + ' logo'"
         class="experience-card__company-logo"
-      >
+      />
     </a>
     <p class="experience-card__description">
       {{ description }}
@@ -38,14 +40,14 @@ export default class EducationCard extends Vue {
 <style scoped lang="scss">
 .experience-card {
   position: relative;
-  background-color: rgba(#fff, .7);
+  background-color: rgba(#fff, 0.7);
   border-radius: 20px;
   padding: 3rem 5rem;
-  transition: all .2s;
+  transition: all 0.2s;
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: .5rem 1rem 1.5rem rgba(black, 0.1);
+    box-shadow: 0.5rem 1rem 1.5rem rgba(black, 0.1);
   }
 
   &:not(:last-child) {
@@ -68,7 +70,7 @@ export default class EducationCard extends Vue {
   }
 
   &__duration {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   &__company-logo {
