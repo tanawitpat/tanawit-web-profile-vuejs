@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import EducationCard from '../components/EducationCard.vue';
+import EducationCard from './components/EducationCard.vue';
 
 export default {
   name: 'section-education',
@@ -40,7 +40,7 @@ export default {
       rgba(#fff, 0.8),
       rgba(#fff, 0.8)
     ),
-    url(../assets/img/education-bg.jpg);
+    url(../../assets/img/education-bg.jpg);
   background-position: center 35%;
   background-size: cover;
 

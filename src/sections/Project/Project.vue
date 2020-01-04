@@ -57,8 +57,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import ProjectCardOneButton from '../components/ProjectCardOneButton.vue';
-import ProjectCardTwoButton from '../components/ProjectCardTwoButton.vue';
+import ProjectCardOneButton from './components/ProjectCardOneButton.vue';
+import ProjectCardTwoButton from './components/ProjectCardTwoButton.vue';
 
 export default {
   name: 'section-project',
@@ -77,7 +77,7 @@ export default {
       rgba($color-blue-dark, 0.9),
       rgba($color-blue-dark, 0.9)
     ),
-    url(../assets/img/bg1.jpg);
+    url(../../assets/img/bg1.jpg);
 
   @include respond(medium) {
     padding: 10rem 5rem;

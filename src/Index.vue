@@ -10,12 +10,12 @@
 </template>
 
 <script lang="ts">
-import SectionHome from './sections/Home.vue';
-import SectionAboutMe from './sections/AboutMe.vue';
-import SectionSkill from './sections/Skill.vue';
-import SectionExperience from './sections/Experience.vue';
-import SectionProject from './sections/Project.vue';
-import SectionEducation from './sections/Education.vue';
+import SectionHome from './sections/Home/Home.vue';
+import SectionAboutMe from './sections/AboutMe/AboutMe.vue';
+import SectionSkill from './sections/Skill/Skill.vue';
+import SectionExperience from './sections/Experience/Experience.vue';
+import SectionProject from './sections/Project/Project.vue';
+import SectionEducation from './sections/Education/Education.vue';
 
 export default {
   name: 'index',

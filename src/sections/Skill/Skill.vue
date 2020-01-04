@@ -2,8 +2,8 @@
   <section class="section-skills">
     <div class="bg-video">
       <video class="bg-video__content" autoplay muted loop>
-        <source src="../assets/img/Love-Coding.mp4" type="video/mp4" />
-        <source src="../assets/img/Love-Coding.webm" type="video/webm" />
+        <source src="../../assets/img/Love-Coding.mp4" type="video/mp4" />
+        <source src="../../assets/img/Love-Coding.webm" type="video/webm" />
         Your browser is not supported!
       </video>
     </div>
@@ -62,7 +62,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import SkillCard from '../components/SkillCard.vue';
+import SkillCard from './components/SkillCard.vue';
 
 export default {
   name: 'section-skill',

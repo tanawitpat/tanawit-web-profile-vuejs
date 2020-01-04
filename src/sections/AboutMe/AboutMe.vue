@@ -32,14 +32,14 @@
         <div class="section-aboutme__social-network">
           <a href="https://www.linkedin.com/in/tanawitp/">
             <img
-              src="../assets/img/linkedin.jpg"
+              src="../../assets/img/linkedin.jpg"
               alt="Linkedin logo"
               class="section-aboutme__social-network--logo"
             />
           </a>
           <a href="https://github.com/tanawitpat">
             <img
-              src="../assets/img/github.png"
+              src="../../assets/img/github.png"
               alt="Github logo"
               class="section-aboutme__social-network--logo"
             />

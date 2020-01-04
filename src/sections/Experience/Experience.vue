@@ -60,7 +60,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import ExperienceCard from '../components/ExperienceCard.vue';
+import ExperienceCard from './components/ExperienceCard.vue';
 
 export default {
   name: 'section-experience',
@@ -79,7 +79,7 @@ export default {
       rgba($color-grey-light-1, 0.9),
       rgba(#fff, 0.9)
     ),
-    url(../assets/img/experience-bg.jpg);
+    url(../../assets/img/experience-bg.jpg);
   background-position: center 35%;
   background-size: cover;
 
