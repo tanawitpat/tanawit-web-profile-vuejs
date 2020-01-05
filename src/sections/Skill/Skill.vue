@@ -4,12 +4,9 @@
       <video class="bg-video__content" autoplay muted loop>
         <source src="../../assets/img/Love-Coding.mp4" type="video/mp4" />
         <source src="../../assets/img/Love-Coding.webm" type="video/webm" />
-        Your browser is not supported!
       </video>
     </div>
-    <h1 class="heading-primary u-margin-bottom-medium section-skills__heading">
-      Skills
-    </h1>
+    <h1 class="heading-primary u-margin-bottom-medium section-skills__heading">Skills</h1>
     <div class="section-skills__cards">
       <div class="section-skills__cards__card">
         <h3 class="section-skills__cards__card--topic">Frontend Development</h3>
@@ -50,10 +47,7 @@
           <SkillCard iconPath="img/skills/docker.png" name="Docker" />
           <SkillCard iconPath="img/skills/jenkins.png" name="Jenkins" />
           <SkillCard iconPath="img/skills/kubernetes.png" name="Kubernetes" />
-          <SkillCard
-            iconPath="img/skills/robotframework.png"
-            name="Robot Framework"
-          />
+          <SkillCard iconPath="img/skills/robotframework.png" name="Robot Framework" />
         </div>
       </div>
     </div>
@@ -120,6 +114,23 @@ export default {
         flex-wrap: wrap;
       }
     }
+  }
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  overflow: hidden;
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 </style>
