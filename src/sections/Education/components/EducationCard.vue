@@ -14,9 +14,7 @@
       />
     </a>
     <ul class="education-card__description">
-      <li v-for="description in descriptions" v-bind:key="description">
-        {{ description }}
-      </li>
+      <li v-for="description in descriptions" v-bind:key="description">{{ description }}</li>
     </ul>
   </div>
 </template>

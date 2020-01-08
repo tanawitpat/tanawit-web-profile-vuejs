@@ -1,20 +1,20 @@
 <template>
   <div class="experience-card">
     <h3 class="experience-card__position">{{ title }}</h3>
-    <a :href="companyWebsite" class="experience-card__company-name">{{
+    <a :href="companyLink" class="experience-card__company-name">
+      {{
       companyName
-    }}</a>
+      }}
+    </a>
     <p class="experience-card__duration">{{ duration }}</p>
-    <a :href="companyWebsite">
+    <a :href="companyLink">
       <img
         :src="require(`@/assets/${companyLogoPath}`)"
         :alt="companyName + ' logo'"
         class="experience-card__company-logo"
       />
     </a>
-    <p class="experience-card__description">
-      {{ description }}
-    </p>
+    <p class="experience-card__description">{{ description }}</p>
   </div>
 </template>
 
@@ -27,7 +27,7 @@ export default class EducationCard extends Vue {
 
   @Prop() companyName!: string;
 
-  @Prop() companyWebsite!: string;
+  @Prop() companyLink!: string;
 
   @Prop() description!: string;
 

@@ -1,21 +1,17 @@
 <template>
   <section class="section-education">
-    <h1 class="heading-primary u-margin-bottom-big section-education__heading">
-      Education
-    </h1>
+    <h1 class="heading-primary u-margin-bottom-big section-education__heading">Education</h1>
     <div class="section-education__card">
       <EducationCard
-        schoolName="Chulalongkorn University"
-        degree="Bachelor of Science in Statistics"
-        honor="Second-Class Honors"
-        duration="2014-2018"
-        schoolLogoPath="img/chula.png"
-        schoolLink="https://www.chula.ac.th/en"
-        :descriptions="[
-          'Head of Statistics Department Exhibition in Banshi Chula Expo 2017.',
-          'Research Assistant at Center of Statistical Consulting and Research, CU.',
-          'Teaching Assistant in Data Science Practicum class.',
-        ]"
+        v-for="item in educationData"
+        :key="item.schoolName"
+        :schoolName="item.schoolName "
+        :degree="item.degree"
+        :honor="item.honor"
+        :duration="item.duration"
+        :schoolLogoPath="item.schoolLogoPath"
+        :schoolLink="item.schoolLink"
+        :descriptions="item.descriptions"
       />
     </div>
   </section>
@@ -24,9 +20,15 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import EducationCard from './components/EducationCard.vue';
+import educationData from '@/assets/data/education.json';
 
 export default {
   name: 'section-education',
+  data() {
+    return {
+      educationData: educationData.data,
+    };
+  },
   components: {
     EducationCard,
   },

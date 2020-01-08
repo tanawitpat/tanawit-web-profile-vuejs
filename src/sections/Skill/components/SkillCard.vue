@@ -1,10 +1,6 @@
 <template>
   <div class="skill-card">
-    <img
-      :src="require(`@/assets/${iconPath}`)"
-      :alt="name + ' icon'"
-      class=""
-    />
+    <img :src="require(`@/assets/${iconPath}`)" :alt="name + ' icon'" class />
     <p>{{ name }}</p>
   </div>
 </template>
