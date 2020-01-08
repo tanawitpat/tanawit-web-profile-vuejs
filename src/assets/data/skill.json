@@ -1,0 +1,82 @@
+{
+  "section": "skill",
+  "data": [{
+    "name": "Frontend Development",
+    "items": [{
+      "name": "JavaScript",
+      "iconPath": "img/skills/javascript.jpg"
+    }, {
+      "name": "React",
+      "iconPath": "img/skills/react.png"
+    }, {
+      "name": "Vue",
+      "iconPath": "img/skills/vue.png"
+    }, {
+      "name": "HTML",
+      "iconPath": "img/skills/html.png"
+    }, {
+      "name": "CSS",
+      "iconPath": "img/skills/css.png"
+    }, {
+      "name": "SASS",
+      "iconPath": "img/skills/sass.png"
+    }]
+  }, {
+    "name": "Backend Development",
+    "items": [{
+      "name": "Go",
+      "iconPath": "img/skills/go.png"
+    }, {
+      "name": "Python",
+      "iconPath": "img/skills/python.png"
+    }, {
+      "name": "GraphQL",
+      "iconPath": "img/skills/graphql.png"
+    }, {
+      "name": "MySQL",
+      "iconPath": "img/skills/mysql.png"
+    }, {
+      "name": "MongoDB",
+      "iconPath": "img/skills/mongodb.png"
+    }, {
+      "name": "Redis",
+      "iconPath": "img/skills/redis.png"
+    }]
+  }, {
+    "name": "Cloud Services",
+    "items": [{
+      "name": "EC2",
+      "iconPath": "img/skills/ec2.png"
+    }, {
+      "name": "S3",
+      "iconPath": "img/skills/s3.png"
+    }, {
+      "name": "Route 53",
+      "iconPath": "img/skills/route53.png"
+    }, {
+      "name": "GKE",
+      "iconPath": "img/skills/gke.png"
+    }, {
+      "name": "Google Cloud Run",
+      "iconPath": "img/skills/gcr.png"
+    }, {
+      "name": "Firebase",
+      "iconPath": "img/skills/firebase.png"
+    }]
+  }, {
+    "name": "DevOps",
+    "items": [{
+      "name": "Docker",
+      "iconPath": "img/skills/docker.png"
+    }, {
+      "name": "Jenkins",
+      "iconPath": "img/skills/jenkins.png"
+    }, {
+      "name": "Kubernetes",
+      "iconPath": "img/skills/kubernetes.png"
+    }, {
+      "name": "Robot Framework",
+      "iconPath": "img/skills/robotframework.png"
+    }]
+  }]
+}
