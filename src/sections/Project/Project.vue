@@ -1,46 +1,18 @@
 <template>
   <section class="section-project">
-    <h1 class="heading-primary u-margin-bottom-small section-project__heading">
-      Personal Projects
-    </h1>
+    <h1 class="heading-primary u-margin-bottom-small section-project__heading">Personal Projects</h1>
     <div class="section-project__quote">
-      <p>
-        For the things we have to learn before we can do them, we learn by doing
-        them.
-      </p>
+      <p>For the things we have to learn before we can do them, we learn by doing them.</p>
       <p>- Aristotle, The Nicomachean Ethics -</p>
     </div>
     <div class="section-project__card">
-      <ProjectCardTwoButton
-        projectName="Tanawit's Web Profile"
-        previewImagePath="img/project-tanawitp.png"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-          ultrices gravida dictum fusce ut. Velit euismod in pellentesque massa."
-        buttonOneLink="https://tanawitp.me"
-        buttonOneLabel="Website"
-        buttonTwoLink="https://github.com/tanawitpat/tanawitp-frontend-sass"
-        buttonTwoLabel="Source Code"
-      />
-      <ProjectCardTwoButton
-        projectName="Kiren BBQ"
-        previewImagePath="img/project-kiren.png"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-          ultrices gravida dictum fusce ut. Velit euismod in pellentesque massa."
-        buttonOneLink="http://kiren.tanawitp.me"
-        buttonOneLabel="Website"
-        buttonTwoLink="http://github.com/tanawitpat/kiren-frontend"
-        buttonTwoLabel="Source Code"
-      />
-      <ProjectCardOneButton
-        projectName="ML Kubernetes"
-        previewImagePath="img/project-ml-kubernetes.png"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-          ultrices gravida dictum fusce ut. Velit euismod in pellentesque massa."
-        buttonLink="http://github.com/tanawitpat/ml-kubernetes"
-        buttonLabel="Source Code"
+      <ProjectCard
+        v-for="project in projectData"
+        :key="project.name"
+        :projectName="project.name"
+        :previewImagePath="project.previewImagePath"
+        :description="project.description"
+        :actions="project.actions"
       />
     </div>
     <div class="section-project__footer">
@@ -48,23 +20,25 @@
         onclick="window.location='https://github.com/tanawitpat'"
         type="button"
         class="btn"
-      >
-        Explore more
-      </button>
+      >Explore more</button>
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import ProjectCardOneButton from './components/ProjectCardOneButton.vue';
-import ProjectCardTwoButton from './components/ProjectCardTwoButton.vue';
+import ProjectCard from './components/ProjectCard.vue';
+import projectData from '@/assets/data/project.json';
 
 export default {
   name: 'section-project',
+  data() {
+    return {
+      projectData: projectData.data,
+    };
+  },
   components: {
-    ProjectCardOneButton,
-    ProjectCardTwoButton,
+    ProjectCard,
   },
 };
 </script>
