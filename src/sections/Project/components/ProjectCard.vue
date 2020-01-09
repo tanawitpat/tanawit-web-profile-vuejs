@@ -8,26 +8,22 @@
     />
     <p class="project-card__description">{{ description }}</p>
     <div class="project-card__footer">
-      <div
-        :onclick="`window.location='` + buttonOneLink + `';`"
-        class="
-          project-card__footer__double-button
-          project-card__footer__double-button--1
-          u-center-text
-        "
-      >
-        {{ buttonOneLabel }}
-      </div>
-      <div
-        :onclick="`window.location='` + buttonTwoLink + `';`"
-        class="
-          project-card__footer__double-button
-          project-card__footer__double-button--2
-          u-center-text
-        "
-      >
-        {{ buttonTwoLabel }}
-      </div>
+      <template v-if="actions.length == 1">
+        <div
+          :onclick="`window.location='` + actions[0].link + `';`"
+          class="project-card__footer__single-button u-center-text"
+        >{{ actions[0].label }}</div>
+      </template>
+      <template v-else-if="actions.length == 2">
+        <div
+          :onclick="`window.location='`+actions[0].link +`';`"
+          class="project-card__footer__double-button project-card__footer__double-button--1 u-center-text"
+        >{{ actions[0].label }}</div>
+        <div
+          :onclick="`window.location='`+actions[1].link +`';`"
+          class="project-card__footer__double-button project-card__footer__double-button--2 u-center-text"
+        >{{ actions[1].label }}</div>
+      </template>
     </div>
   </div>
 </template>
@@ -36,20 +32,18 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
-export default class ProjectCardTwoButton extends Vue {
-  @Prop() projectName!: string;
+export default class ProjectCard extends Vue {
+  @Prop()
+  projectName!: string;
 
-  @Prop() previewImagePath!: string;
+  @Prop()
+  previewImagePath!: string;
 
-  @Prop() description!: string;
+  @Prop()
+  description!: string;
 
-  @Prop() buttonOneLink!: string;
-
-  @Prop() buttonOneLabel!: string;
-
-  @Prop() buttonTwoLink!: string;
-
-  @Prop() buttonTwoLabel!: object;
+  @Prop()
+  actions!: object;
 }
 </script>
 
